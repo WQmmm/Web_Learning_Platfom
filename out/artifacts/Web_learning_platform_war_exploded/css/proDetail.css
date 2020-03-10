@@ -1,0 +1,340 @@
+.banner {
+    min-width: 1160px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+/*********************current********************/
+.current {
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 10px;
+}
+
+.current .choice {
+    position: relative;
+    line-height: 40px;
+}
+
+/**************select***********/
+.current ul.select {
+    position: absolute;
+    left: 0;
+    top: 40px;
+    border: 1px solid #dbdbdb;
+    margin-top: 10px;
+    display: none;
+    z-index: 30;
+}
+
+.current ul.select li {
+    border-top: 1px solid #DBDBDB;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    padding-left: 10px;
+    width: 160px;
+    background: #fff;
+}
+
+.current ul.select li:hover {
+    background: #c10000;
+    color: #fff;
+}
+
+/******default*******/
+.current p.default {
+    height: 40px;
+    margin-top: 10px;
+    border: 1px solid #dbdbdb;
+    cursor: pointer;
+    padding-left: 10px;
+    width: 160px;
+    background: url("../img/temp/down.jpg") no-repeat 140px center;
+}
+
+.current p.default.on {
+    background: url("../img/temp/up.jpg") no-repeat 140px center;
+}
+
+/*********************proList****************************/
+.proList {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.proList > li {
+    position: relative;
+    float: left;
+    width: 268px;
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #fff;
+}
+
+.proList > li img {
+    width: 268px;
+    height: 268px;
+}
+
+.proList > li dl dd {
+    height: 30px;
+    line-height: 30px;
+}
+
+.proList > li dl dd:last-child, .paintList a dl dd:last-child {
+    color: #C10000;
+    font-size: 16px;
+}
+
+/***************aHover*************/
+.proList > li p {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    width: 200px;
+    height: 45px;
+    margin-left: -100px;
+    margin-top: -25px;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #000;
+    background: rgba(255, 255, 255, 0.5);
+    color: #262626;
+}
+
+/**********************mask****************/
+.mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 101;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+/*******************proDets*************************/
+.proDets {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 102;
+    margin-left: -370px;
+    margin-top: -280px;
+    padding: 30px;
+    width: 740px;
+    background: #fff;
+    display: none;
+}
+
+.off {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.proDets .tit {
+    height: 50px;
+    line-height: 50px;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.proDets .tit h4 {
+    font-weight: normal;
+}
+
+.proDets .tit span {
+    color: #C10000;
+}
+
+.proCon .proImg {
+    /*width: 360px;*/
+}
+
+.proCon .proImg img {
+    /*display: block;*/
+}
+
+.smallImg {
+    margin-top: 20px;
+}
+
+.smallImg img {
+    float: left;
+}
+
+.proIntro .smallImg p {
+    padding: 2px;
+    margin-right: 20px;
+    border: 1px solid #fff;
+}
+
+.proIntro .smallImg img {
+    width: 45px;
+}
+
+.proImg .smallImg img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.proIntro {
+    width: 350px;
+    padding: 20px 10px;
+    margin: 35px 0;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.proIntro > p {
+    height: 30px;
+    line-height: 30px;
+}
+
+.proIntro > p span {
+    color: #C10000;
+}
+
+.proIntro .smallImg {
+    margin: 20px 0 35px;
+    position: relative;
+}
+
+.proIntro .smallImg p.on {
+    border: 1px solid #C10000;
+}
+
+.proIntro .smallImg p {
+    border: 1px solid #fff;
+}
+
+.proIntro .smallImg span {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    padding: 5px;
+    border: 1px solid #dbdbdb;
+}
+
+.proIntro .num {
+    margin-top: 20px;
+}
+
+.proIntro .num span {
+    width: 27px;
+    height: 27px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.proIntro .num img {
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.proIntro .num p.please {
+    margin-left: 20px;
+    color: #C10000;
+    line-height: 27px;
+    display: none;
+}
+
+.btns p, .changeBtn p {
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btns p.buy, .changeBtn p.buy {
+    background: #C10000;
+    color: #fff;
+}
+
+.btns p.cart, .changeBtn p.cart {
+    border: 1px solid #000;
+}
+
+a.more {
+    position: absolute;
+    right: 26px;
+    bottom: 26px;
+    text-decoration: underline;
+}
+
+/******************************proDetail******************************/
+.detCon {
+    margin-top: 30px;
+}
+
+.detCon .proDet .proImg > img {
+    width: 480px;
+    height: 320px;
+    margin-bottom:50px;
+    margin-left: 50px;
+}
+
+
+.detCon .proDet{
+    width: auto;
+    height: auto;
+}
+
+.detCon .smallImg > img {
+    width: 85px;
+    height: 85px;
+}
+
+.detCon .proImg {
+    width: 480px;
+    height: 330px;
+    margin-bottom:50px;
+
+}
+
+.detCon .intro {
+    width: 500px;
+    margin-right: 150px;
+
+}
+
+.detCon .intro .title h4 {
+    height: 50px;
+    line-height: 50px;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.detCon .intro .title p {
+    margin: 10px 0;
+    color: #777;
+}
+
+.detCon .intro .title span {
+    font-size: 22px;
+    color: #C10000;
+}
+
+.detCon .intro .proIntro {
+    width: auto;
+}
+
+.detCon .btn {
+    padding: 0 30px;
+}
+
+.introMsg {
+    margin-top: 50px;
+}

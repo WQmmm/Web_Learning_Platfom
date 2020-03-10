@@ -1,0 +1,61 @@
+
+ul{
+    list-style-type: none;
+}
+
+.erji_u1 dt{
+    margin-left: 50px;
+    font-size: 15px;
+    color: #777777;
+    margin-top:15px;
+}
+
+.nav li{
+    font-size: 20px;
+    color: #777777;
+    margin-top: 5px;
+    margin-left: 5%;
+}
+.nav li a{
+
+}
+.nav a{
+    text-decoration-line: none;
+    color: #777777;
+}
+
+.nav p{
+    display: inline;
+    font-size: 28px;
+    color: #777777;
+    margin-top: 50px;
+}
+
+
+.nav .p2{
+    margin: 0px 65px;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    background-color: #BBBBBB;
+    color: #FFF;
+}
+/*
+ul li:hover .erji_u1{
+    display: block;
+}
+.erji_u1{
+    display: none;
+}
+
+.nav hr{
+    width: 20%;
+
+}
+
+ */
