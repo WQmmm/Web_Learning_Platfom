@@ -65,7 +65,13 @@
                         </tr>
                         </c:forEach>
                     </table>
-                    <div class="list-page"> 2 条 1/1 页</div>
+                    <div class="list-page">
+                    共${tsum}条记录，第${cpage}/${psum}页
+                        <a href="#">首页</a>
+                        <a href="#">上一页</a>
+                        <a href="#">下一页</a>
+                        <a href="#">尾页</a>
+                    </div>
                 </div>
             </form>
         </div>
