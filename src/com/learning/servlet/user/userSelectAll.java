@@ -24,16 +24,16 @@ public class userSelectAll extends HttpServlet {
 
         //用户所指定的页数
         String cp = req.getParameter("cp");
+        String keyword = req.getParameter("keywords");
         if(cp != null){
             cpage = Integer.parseInt(cp);     //将通过get获得的参数转化为整型
         }
-
         //获取数据库中记录的总数和总页数
         try {
             int arr[] = Userdao.totalPage(count);
             //放到请求域当中
             req.setAttribute("tsum", arr[0]);
-            req.setAttribute("psum", arr[1]);
+            req.setAttribute("tpage", arr[1]);
             req.setAttribute("cpage", cpage);
         } catch (SQLException e) {
             e.printStackTrace();
@@ -41,7 +41,7 @@ public class userSelectAll extends HttpServlet {
 
         try {
             //获取所有用户记录
-            ArrayList<Userbean> list = Userdao.selectAll();
+            ArrayList<Userbean> list = Userdao.selectAll(cpage, count, keyword);
             //添加到请求域中
             req.setAttribute("userlist",list);
         } catch (SQLException e) {

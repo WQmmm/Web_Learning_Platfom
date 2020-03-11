@@ -16,16 +16,9 @@
         </div>
         <div class="search-wrap">
             <div class="search-content">
-                <form action="#" method="post">
+                <form action="#" method="get">
                     <table class="search-tab">
                         <tr>
-                            <th width="120">选择分类:</th>
-                            <td>
-                                <select name="search-sort" id="">
-                                    <option value="">全部</option>
-                                    <option value="19">精品界面</option><option value="20">推荐界面</option>
-                                </select>
-                            </td>
                             <th width="70">关键字:</th>
                             <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
                             <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
@@ -66,11 +59,11 @@
                         </c:forEach>
                     </table>
                     <div class="list-page">
-                    共${tsum}条记录，第${cpage}/${psum}页
-                        <a href="#">首页</a>
-                        <a href="#">上一页</a>
-                        <a href="#">下一页</a>
-                        <a href="#">尾页</a>
+                    共${tsum}条记录，第${cpage}/${tpage}页
+                        <a href="/manage/admin_douserselect?cp=${cpage = 1}">首页</a>
+                        <a href="/manage/admin_douserselect?cp=${cpage-1<1?1:cpage-1}">上一页</a>
+                        <a href="/manage/admin_douserselect?cp=${cpage+1>tpage?tpage:cpage+1}">下一页</a>
+                        <a href="/manage/admin_douserselect?cp=${tpage}">尾页</a>
                     </div>
                 </div>
             </form>

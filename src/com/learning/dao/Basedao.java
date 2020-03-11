@@ -14,6 +14,7 @@ public class Basedao {
         }
     }
 
+    //获取数据库连接
     public static Connection getConnection() throws SQLException {
         Connection conn = null;
         String dbURL  = "jdbc:mysql://localhost:3306/learning";
@@ -30,6 +31,7 @@ public class Basedao {
         return conn;
     }
 
+    //执行SQL代码
     public static int exectuIUD(String sql,Object[] params) throws SQLException {
         int count = 0;
         Connection conn = getConnection();
@@ -55,6 +57,8 @@ public class Basedao {
         //返回受影响的行数
         return count;
     }
+
+    //关闭所有连接
     public static void closeAll(ResultSet resultSet, PreparedStatement preparedStatement, Connection conn){
         try{
             if(resultSet != null)

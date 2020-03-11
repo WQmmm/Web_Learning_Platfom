@@ -7,6 +7,7 @@ import java.sql.*;
 import java.util.ArrayList;
 
 public class Userdao {
+    //添加用户信息
     public static int insert(Userbean userbean) throws SQLException {
         String sql = "insert into user values(?,?,?)";
         Object[] params = {
@@ -16,6 +17,7 @@ public class Userdao {
         return Basedao.exectuIUD(sql,params);
     }
 
+    //获取数据库中的总记录数
     public static int[] totalPage(int count) throws SQLException {
         int arr[] = {0,1};       //arr[0]保存的是总的记录，arr[1]保存的是总的页数
 
@@ -44,17 +46,37 @@ public class Userdao {
 
         return arr;
     }
-    public static ArrayList<Userbean> selectAll() throws SQLException {
+
+    //查询信息
+    public static ArrayList<Userbean> selectAll(int cpage, int count,String keyword) throws SQLException {
         PreparedStatement preparedStatement = null;
         ResultSet resultSet = null;
         Connection  conn = null;
         ArrayList<Userbean> list= new ArrayList<Userbean>();
 
         try {
-            String sql = "select * from user order by id";
+            //LIMIT 接受一个或两个数字参数。参数必须是一个整数常量。如果给定两个参数，
+            //第一个参数指定第一个返回记录行的偏移量，第二个参数指定返回记录行的最大数目。
+            // 初始记录行的偏移量是 0(而不是 1)
+            String sql = "";
             conn = Basedao.getConnection();
-            preparedStatement = conn.prepareStatement(sql);
+            if(keyword != null){
+                //搜索
+                 sql = "select * from user where  name like ? order by id limit ?,?";
+                preparedStatement = conn.prepareStatement(sql);
+                 preparedStatement.setString(1,"%" + keyword + "%");
+                 preparedStatement.setInt(2,(cpage - 1 )* count);
+                 preparedStatement.setInt(3, count);
+            }
+            else{
+                //非搜索
+                sql = "select * from user order by id desc limit ?, ?";
+                preparedStatement = conn.prepareStatement(sql);
+                preparedStatement.setInt(1,(cpage - 1 )* count);
+                preparedStatement.setInt(2, count);
+            }
             resultSet = preparedStatement.executeQuery();
+
             while (resultSet.next()) {
                 Userbean userbean = new Userbean(
                         resultSet.getString("id"),
