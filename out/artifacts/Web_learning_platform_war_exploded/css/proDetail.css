@@ -299,7 +299,7 @@ a.more {
 
 .detCon .proImg {
     width: 480px;
-    height: 330px;
+    height: 400px;
     margin-bottom:50px;
 
 }
@@ -311,15 +311,16 @@ a.more {
 }
 
 .detCon .intro .title h4 {
-    height: 50px;
+    height: 40px;
     line-height: 50px;
     font-weight: normal;
-    font-size: 22px;
+    font-size: 35px;
 }
 
 .detCon .intro .title p {
-    margin: 10px 0;
+    margin: 15px 0;
     color: #777;
+    font-size: 16px;
 }
 
 .detCon .intro .title span {

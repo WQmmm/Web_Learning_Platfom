@@ -1,4 +1,4 @@
-$(function () {
+/*$(function () {
     var a = $(".ok span").text();
     function b() {
         a--;
@@ -13,4 +13,4 @@ $(function () {
         $(".one").hide();
         $(".forCon ul li").eq(1).addClass("on").siblings("li").removeClass("on")
     })
-});
+});*/

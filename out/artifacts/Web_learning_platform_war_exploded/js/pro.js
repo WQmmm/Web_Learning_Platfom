@@ -100,12 +100,13 @@ $(function () {
     });
     var a = $(".ok span").text();
 
+    /*
     function b() {
         $(".ok span").text(a);
         if (a == 0) {
             window.location.href = ("proDetail1.jsp")
         }
-    }
+    }*/
 
     setInterval(b, 1000);
     $(".next").click(function () {

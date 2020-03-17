@@ -15,19 +15,9 @@
     <link rel="stylesheet" type="text/css" href="css/proDetail.css"/>
     <link rel="stylesheet" type="text/css" href="css/mianfei.css">
 </head>
-<body><!------------------------------head------------------------------>
 <div class="head">
     <div class="wrapper clearfix">
-        <div class="clearfix" id="top"><h1 class="fl"><a href="index.jsp"><img src=""/></a></h1>
-            <div class="fr clearfix" id="top1"><p class="fl">
-            </p>
-                <form action="#" method="get" class="fl"><input type="text" placeholder="搜索"/><input type="button"/>
-                </form>
-                <div class="btn fl clearfix"><a href="mygxin.jsp"><img src="img/grzx.png"/></a><a href="#" class="er1"><img
-                        src="img/ewm.png"/></a><a href="cart.jsp"><img src="img/gwc.png"/></a>
-                    <p><a href="#"><img src="img/smewm.png"/></a></p></div>
-            </div>
-        </div>
+
         <ul class="clearfix" id="bott">
             <li><a href="index.jsp">首页</a></li>
             <li><a href="#">热门课程</a>
@@ -74,11 +64,20 @@
             <li><a href="perfume.jsp">微专业</a></li>
             <li><a href="idea.jsp">免费课程</a></li>
         </ul>
-    </div>
-</div><!-----------------address------------------------------->
-<div class="address">
-    <div class="wrapper clearfix"><a href="index.jsp">首页</a><span>/</span><a
-            href="flowerDer.jsp">热门课程</a><span>/</span><a href="#"class="on">MySQL数据库开发教程</a>
+
+        <div class="clearfix" id="top">
+            <h1 class="fl"><a href="index.jsp"><img src="" /></a></h1>
+            <div class="fr clearfix" id="top1">
+                <p class="fl"><a href="login.jsp" id="login">登录</a><a href="reg.jsp" id="reg">注册</a>
+                </p>
+                <form action="#" method="get" class="fl"><input type="text" placeholder="热门搜索：MySQL入门" /><input
+                        type="button" /></form>
+                <div class="btn fl clearfix"><a href="login.jsp"><img src="img/grzx.png" /></a><a href="#"
+                                                                                                  class="er1"><img src="img/ewm.png" /></a><a href="login.jsp"><img src="img/gwc.png" /></a>
+                    <p><a href="#"><img src="" /></a></p>
+                </div>
+            </div>
+        </div>
     </div>
 </div><!-----------------------Detail------------------------------>
 <div class="detCon">

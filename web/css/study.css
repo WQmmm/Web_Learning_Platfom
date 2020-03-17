@@ -7,7 +7,7 @@ ul{
     margin-left: 50px;
     font-size: 15px;
     color: #777777;
-    margin-top:15px;
+    margin-top:10px;
 }
 
 .nav li{
@@ -37,7 +37,6 @@ ul{
 }
 
 
-
 a{
     text-decoration: none;
 }
@@ -57,5 +56,5 @@ ul li:hover .erji_u1{
     width: 20%;
 
 }
-
  */
+
