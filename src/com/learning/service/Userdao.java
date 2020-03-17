@@ -18,24 +18,35 @@ public class Userdao {
     }
 
     //获取数据库中的总记录数
-    public static int[] totalPage(int count) throws SQLException {
+    public static int[] totalPage(int counts, String keyword) throws SQLException {
         int arr[] = {0,1};       //arr[0]保存的是总的记录，arr[1]保存的是总的页数
 
         Connection conn = null;
         ResultSet resultSet = null;
         PreparedStatement preparedStatement = null;
 
-        String sql = "select count(*) from user";
+        conn = Basedao.getConnection();
+        String sql = "";
         try {
-            conn = Basedao.getConnection();
-            preparedStatement = conn.prepareStatement(sql);
-            resultSet = preparedStatement.executeQuery();
+            if(keyword != null){
+                //搜索
+                sql = "select count(*) from user where  name like ? order by id";
+                preparedStatement = conn.prepareStatement(sql);
+                preparedStatement.setString(1,"%" + keyword + "%");
+                resultSet = preparedStatement.executeQuery();
+            }else {
+                //非搜索
+                sql = "select count(*) from user";
+                preparedStatement = conn.prepareStatement(sql);
+                resultSet = preparedStatement.executeQuery();
+            }
+
             while (resultSet.next()){
                 arr[0] = resultSet.getInt(1);
-                if(arr[0] % count == 0){
-                    arr[1] = arr[0]/5;
+                if(arr[0] % counts == 0){
+                    arr[1] = arr[0]/5;               //总页数为5的倍数时，0、5、15、20.......
                 }else {
-                    arr[1] = arr[0]/5 + 1;
+                    arr[1] = arr[0]/5 + 1;           //总页数不为5的倍数时
                 }
             }
         }catch (Exception e){
@@ -91,6 +102,80 @@ public class Userdao {
             Basedao.closeAll(resultSet,preparedStatement,conn);
         }
         return list;
+    }
+
+    public static Userbean selectById(String id){
+        Connection conn = null;
+        ResultSet resultSet = null;
+        PreparedStatement preparedStatement = null;
+        Userbean userbean =null;
+
+        try {
+            conn = Basedao.getConnection();
+            String sql = "select * from user where id like ?";
+            preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setString(1, id);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                userbean = new Userbean(
+                        resultSet.getString("id"),
+                        resultSet.getString("name"),
+                        resultSet.getString("password")
+                );
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            Basedao.closeAll(resultSet,preparedStatement,conn);
+        }
+        return userbean;
+    }
+
+    public static int selectByNM(String name, String password){
+        Connection conn = null;
+        ResultSet resultSet = null;
+        PreparedStatement preparedStatement = null;
+        int count = 0;
+
+        try {
+            conn = Basedao.getConnection();
+            String sql = "select count(*) from user where name like ? and password like ?";
+            preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setString(1, name);
+            preparedStatement.setString(2,password);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                count = resultSet.getInt(1);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            Basedao.closeAll(resultSet,preparedStatement,conn);
+        }
+        return count;
+    }
+
+    public static int register(String id, String name, String password){
+        Connection conn = null;
+        ResultSet resultSet = null;
+        PreparedStatement preparedStatement = null;
+        int count = 0;
+
+        try {
+            conn = Basedao.getConnection();
+            String sql = "insert into user values (?, ?, ?)";
+            preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setString(1, id);
+            preparedStatement.setString(2, name);
+            preparedStatement.setString(3,password);
+            preparedStatement.executeUpdate();
+            count = 1;
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            Basedao.closeAll(resultSet,preparedStatement,conn);
+        }
+        return count;
     }
 
 }

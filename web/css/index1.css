@@ -247,9 +247,7 @@ a.ad {
     background-position: left top;
 }
 
-.block_home_slider .flex-direction-nav a.flex-prev:hover {
-    background-position: left bottom;
-}
+
 
 .block_home_slider .flex-direction-nav a.flex-next {
     right: 6px;
@@ -270,24 +268,9 @@ a.ad {
     margin-left: -30px;
 }
 
-.block_home_slider .flex-control-paging li {
-    margin: 0px;
-    padding: 0px;
-    float: left;
-    overflow: hidden;
-    list-style-type: none;
-}
 
-.block_home_slider .flex-control-paging li a {
-    width: 18px;
-    height: 18px;
-    display: block;
-    background-repeat: no-repeat;
-    background-image: url("../img/sprite_nav_3.png.html");
-    text-indent: -9000px;
-    cursor: pointer;
-    background-size: 180%;
-}
+
+
 
 .block_home_slider .flex-control-paging li a.flex-active {
     background-position: right top;
@@ -314,10 +297,11 @@ a.ad {
 
 /* Hide the slides before the JS is loaded. Avoids image jumping */
 .flexslider .slides img {
-    width: 100% ;
+    width: 10%;
     display: block;
 }
 
 .flex-pauseplay span {
     text-transform: capitalize;
 }
+

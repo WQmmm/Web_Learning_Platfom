@@ -30,7 +30,6 @@ img {
     border: none;
 }
 
-
 /*图片的默认边框去掉 */
 table {
     border-collapse: collapse;
@@ -158,8 +157,8 @@ article, aside, figcaption, figure, footer, header, hgroup, nav, section, summar
 
 .head ul {
     float: left;
-    margin-left: 18%;
-    line-height: 50px;
+    margin-left: 10%;
+    line-height: 62px;
 }
 
 .head ul li {

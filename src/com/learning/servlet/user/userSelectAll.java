@@ -30,11 +30,11 @@ public class userSelectAll extends HttpServlet {
         }
         //获取数据库中记录的总数和总页数
         try {
-            int arr[] = Userdao.totalPage(count);
+            int arr[] = Userdao.totalPage(count, keyword);
             //放到请求域当中
-            req.setAttribute("tsum", arr[0]);
-            req.setAttribute("tpage", arr[1]);
-            req.setAttribute("cpage", cpage);
+            req.setAttribute("tsum", arr[0]);       //总记录数
+            req.setAttribute("tpage", arr[1]);      //总页数
+            req.setAttribute("cpage", cpage);       //当前所在页
         } catch (SQLException e) {
             e.printStackTrace();
         }

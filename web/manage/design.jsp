@@ -52,7 +52,7 @@
                             <td>${u.name}</td>
                             <td>${u.password}</td>
                             <td>
-                                <a class="link-update" href="#">修改</a>
+                                <a class="link-update" href="/userUpdate">修改</a>
                                 <a class="link-del" href="#">删除</a>
                             </td>
                         </tr>

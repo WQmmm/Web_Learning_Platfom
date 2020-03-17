@@ -16,7 +16,7 @@
 </head>
 <body><!-------------------login-------------------------->
 <div class="login">
-    <form action="/dao" method="post"><h1><a href="index.jsp"><p>数据库原理网上学习平台</p></a></h1>
+    <form action="/userLogin" method="post"><h1><a href="index.jsp"><p>数据库原理网上学习平台</p></a></h1>
         <p></p>
         <!--
         <div class="msg-warn hide"><b></b>公共场所不建议自动登录，以防账号丢失</div>

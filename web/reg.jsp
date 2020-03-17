@@ -21,7 +21,6 @@
         <p><input type="text" name="id" value="" placeholder="请输入账号"></p>
         <p><input type="text" name="name" value="" placeholder="请输入用户名"></p>
         <p><input type="text" name="password" value="" placeholder="请输入密码"></p>
-        <p><input type="text" name="check_password" value="" placeholder="请确认密码"></p>
         <p class="txtL txt"><input class="code" type="text" name="" value="" placeholder="验证码"><img
                 src="img/temp/code.jpg"></p>
         <p><input type="submit" name="" value="注册"></p>
