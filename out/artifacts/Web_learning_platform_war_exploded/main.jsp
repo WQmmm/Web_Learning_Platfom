@@ -12,26 +12,15 @@
 <head lang="en">
     <meta charset="utf-8" />
     <title>数据库原理网上学习平台</title>
-    <link rel="stylesheet" type="text/css" href="css/public.css" />
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/public1.css" />
+    <link rel="stylesheet" type="text/css" href="css/index1.css" />
 </head>
 
 <body>
 <!------------------------------head------------------------------>
 <div class="head">
     <div class="wrapper clearfix">
-        <div class="clearfix" id="top">
-            <h1 class="fl"><a href="index.jsp"><img src="" /></a></h1>
-            <div class="fr clearfix" id="top1">
-                <p class="fl"><a href="index.jsp" id="login" style="color: #CC0000">退出登录</a>
-                <form action="#" method="get" class="fl"><input type="text" placeholder="热门搜索：MySQL入门" /><input
-                        type="button" /></form>
-                <div class="btn fl clearfix"><a href="mygxin.jsp"><img src="img/grzx.png" /></a>
-                    <a href="#" class="er1"><img src="img/ewm.png" /></a><a href="cart.jsp"><img src="img/gwc.png" /></a>
-                    </p>
-                </div>
-            </div>
-        </div>
+
         <ul class="clearfix" id="bott">
             <li><a href="index.jsp">首页</a></li>
             <li><a href="#">热门课程</a>
@@ -78,97 +67,31 @@
             <li><a href="perfume.jsp">微专业</a></li>
             <li><a href="idea.jsp">免费课程</a></li>
         </ul>
+
+        <div class="clearfix" id="top">
+            <h1 class="fl"><a href="index.jsp"><img src="" /></a></h1>
+            <div class="fr clearfix" id="top1">
+
+                <form action="#" method="get" class="fl"><input type="text" placeholder="热门搜索：MySQL入门" /><input
+                        type="button" /></form>
+                <div class="btn fl clearfix"><a href="login.jsp"><img src="img/grzx.png" /></a><a href="#"
+                                                                                                  class="er1"><img src="img/ewm.png" /></a><a href="login.jsp"><img src="img/gwc.png" /></a>
+                    <a href="index.jsp" style="color: red;font-size:15px">退出登录</a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<!-------------------------banner--------------------------->
-<div class="block_home_slider">
-    <div id="home_slider" class="flexslider">
-        <ul class="slides">
-            <li>
-                <div class="slide"><img src="img/sql/111.jpg" /></div>
-            </li>
-            <li>
-                <div class="slide"><img src="img/sql/111.jpg" /></div>
-            </li>
-        </ul>
-    </div>
+<div id="lunbotu">
+    <ul class="slides">
+        <li>
+            <div class="photo"><img src="img/sql/111.jpg" /></div>
+        </li>
+    </ul>
 </div>
 
-<!------------------------------thImg------------------------------>
-<!--
-<div class="thImg">
-  <div class="clearfix"><a href="vase_proList.jsp"><img src="img/i1.jpg" /></a><a href="proList.jsp"><img
-          src="img/i2.jpg" /></a><a href="#2"><img src="img/i3.jpg" /></a></div>
-</div>
--->
-<!------------------------------news------------------------------>
-<!--
-<div class="news">
-  <div class="wrapper">
-    <h2><img src="img/ih1.jpg" /></h2>
-    <div class="top clearfix"><a href="proDetail.jsp"><img src="img/n1.jpg" />
-      <p></p>
-    </a><a href="proDetail.jsp"><img src="img/n2.jpg" />
-      <p></p>
-    </a><a href="proDetail.jsp"><img src="img/n3.jpg" />
-      <p></p>
-    </a></div>
-    <div class="bott clearfix"><a href="proDetail.html"><img src="img/n4.jpg" />
-      <p></p>
-    </a><a href="proDetail.jsp"><img src="img/n5.jpg" />
-      <p></p>
-    </a><a href="proDetail.jsp"><img src="img/n6.jpg" />
-      <p></p>
-    </a></div>
-    <h2><img src="img/ih2.jpg" /></h2>
-    <div class="flower clearfix tran"><a href="proDetail.jsp" class="clearfix">
-      <dl>
-        <dt><span class="abl"></span><img src="img/flo1.jpg" /><span class="abr"></span></dt>
-        <dd>【花艺】七头美丽玫瑰仿真花束</dd>
-        <dd><span>¥ 79.00</span></dd>
-      </dl>
-    </a><a href="proDetail.jsp">
-      <dl>
-        <dt><span class="abl"></span><img src="img/flo2.jpg" /><span class="abr"></span></dt>
-        <dd>【花艺】七头美丽玫瑰仿真花束</dd>
-        <dd><span>¥ 79.00</span></dd>
-      </dl>
-    </a><a href="proDetail.jsp">
-      <dl>
-        <dt><span class="abl"></span><img src="img/flo3.jpg" /><span class="abr"></span></dt>
-        <dd>【花艺】七头美丽玫瑰仿真花束</dd>
-        <dd><span>¥ 79.00</span></dd>
-      </dl>
-    </a></div>
-    <div class="flower clearfix tran"><a href="proDetail.jsp">
-      <dl>
-        <dt><span class="abl"></span><img src="img/flo4.jpg" /><span class="abr"></span></dt>
-        <dd>【花艺】七头美丽玫瑰仿真花束</dd>
-        <dd><span>¥ 79.00</span></dd>
-      </dl>
-    </a><a href="proDetail.jsp">
-      <dl>
-        <dt><span class="abl"></span><img src="img/flo5.jpg" /><span class="abr"></span></dt>
-        <dd>【花艺】七头美丽玫瑰仿真花束</dd>
-        <dd><span>¥ 79.00</span></dd>
-      </dl>
-    </a><a href="proDetail.jsp">
-      <dl>
-        <dt><span class="abl"></span><img src="img/flo6.jpg" /><span class="abr"></span></dt>
-        <dd>【花艺】七头美丽玫瑰仿真花束</dd>
-        <dd><span>¥ 79.00</span></dd>
-      </dl>
-    </a></div>
-  </div>
-</div>
--->
-<!------------------------------ad------------------------------>
-<!--
-<a href="#" class="ad"><img
-       src="img/ib1.jpg" /></a>
--->
-<!------------------------------people------------------------------>
+
 <div class="people">
     <div class="wrapper">
         <!--
@@ -278,39 +201,23 @@
 <!-------------------login-------------------------->
 <!--footer-->
 <div class="footer">
-    <!--
-    <div class="top">
-      <div class="wrapper">
-        <div class="clearfix"><a href="#2" class="fl"><img src="img/foot1.png" /></a><span
-                class="fl">7天无理由退货</span>
-        </div>
-        <div class="clearfix"><a href="#2" class="fl"><img src="img/foot2.png" /></a><span
-                class="fl">15天免费换货</span>
-        </div>
-        <div class="clearfix"><a href="#2" class="fl"><img src="img/foot3.png" /></a><span
-                class="fl">满599包邮</span>
-        </div>
-        <div class="clearfix"><a href="#2" class="fl"><img src="img/foot4.png" /></a><span
-                class="fl">手机特色服务</span>
-        </div>
-      </div>
-    </div>
-    -->
     <p class="dibu">数据库原理网上学习平台</p>
 </div>
 <script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/public.js" type="text/javascript" charset="utf-8"></script>
-<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery.flexslider-min.js" type="text/javascript" charset="utf-8"></script>
+<!--
 <script type="text/javascript">$(function () {
-    $('#home_slider').flexslider({
-        animation: 'slide',
-        controlNav: true,
-        directionNav: true,
-        animationLoop: true,
-        slideshow: true,
+    $('#lunbotu').flexslider({
+    animation: 'photo',
+    slideshowSpeed: 2000,
+  });
+});</script>
+-->
+<script type="text/javascript">$(function () {
+    $('#lunbotu').flexslider({
+        animation: 'photo',
         slideshowSpeed: 2000,
-        useCSS: false
     });
 });</script>
 </body>

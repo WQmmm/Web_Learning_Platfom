@@ -14,71 +14,7 @@
     <link rel="stylesheet" type="text/css" href="css/public.css"/>
     <link rel="stylesheet" type="text/css" href="css/mygxin.css"/>
 </head>
-<body><!------------------------------head------------------------------>
-<!--
-<div class="head ding">
-
-    <div class="wrapper clearfix">
-
-        <div class="clearfix" id="top"><h1 class="fl"><a href="index.jsp"><img src="img/logo.png"/></a></h1>
-            <div class="fr clearfix" id="top1"><p class="fl"><a href="#" id="login">登录</a><a href="#" id="reg">注册</a>
-            </p>
-                <form action="#" method="get" class="fl"><input type="text" placeholder="搜索"/><input type="button"/>
-                </form>
-                <div class="btn fl clearfix"><a href="mygxin.jsp"><img src="img/grzx.png"/></a><a href="#" class="er1"><img
-                        src="img/ewm.png"/></a><a href="cart.jsp"><img src="img/gwc.png"/></a>
-                    <p><a href="#"><img src="img/smewm.png"/></a></p></div>
-            </div>
-        </div>
-
-        <ul class="clearfix" id="bott">
-            <li><a href="index.jsp">首页</a></li>
-            <li><a href="#">所有商品</a>
-                <div class="sList">
-                    <div class="wrapper  clearfix"><a href="paint.jsp">
-                        <dl>
-                            <dt><img src="img/nav1.jpg"/></dt>
-                            <dd>浓情欧式</dd>
-                        </dl>
-                    </a><a href="paint.jsp">
-                        <dl>
-                            <dt><img src="img/nav2.jpg"/></dt>
-                            <dd>浪漫美式</dd>
-                        </dl>
-                    </a><a href="paint.jsp">
-                        <dl>
-                            <dt><img src="img/nav3.jpg"/></dt>
-                            <dd>雅致中式</dd>
-                        </dl>
-                    </a><a href="paint.jsp">
-                        <dl>
-                            <dt><img src="img/nav6.jpg"/></dt>
-                            <dd>简约现代</dd>
-                        </dl>
-                    </a><a href="paint.jsp">
-                        <dl>
-                            <dt><img src="img/nav7.jpg"/></dt>
-                            <dd>创意装饰</dd>
-                        </dl>
-                    </a></div>
-                </div>
-            </li>
-            <li><a href="flowerDer.jsp">装饰摆件</a>
-                <div class="sList2">
-                    <div class="clearfix"><a href="proList.jsp">干花花艺</a><a href="vase_proList.jsp">花瓶花器</a></div>
-                </div>
-            </li>
-            <li><a href="decoration.jsp">布艺软饰</a>
-                <div class="sList2">
-                    <div class="clearfix"><a href="zbproList.jsp">桌布罩件</a><a href="bzproList.jsp">抱枕靠垫</a></div>
-                </div>
-            </li>
-            <li><a href="paint.jsp">墙式壁挂</a></li>
-            <li><a href="perfume.jsp">蜡艺香薰</a></li>
-            <li><a href="idea.jsp">创意家居</a></li>
-        </ul>
-    </div>
-</div>--><!------------------------------idea------------------------------>
+<body>
 <div class="address mt" id="add">
     <div class="wrapper clearfix"><a href="index.jsp" class="fl">首页</a><span>/</span><a href="mygxin.jsp" class="on">个人中心</a>
     </div>
@@ -87,12 +23,12 @@
     <div class="wrapper clearfix">
         <div class="zuo fl">
             <h3><a href="#"><img src="img/tx.png"/></a>
-                <p class="clearfix"><span class="fl">[123456]</span><span class="fr">[退出登录]</span></p></h3>
+                <p class="clearfix"><span class="fl">[lyyyy]</span><span class="fr">[退出登录]</span></p></h3>
             <div><h4>我的交易</h4>
                 <ul>
                     <li><a href="cart.jsp">我的购物车</a></li>
                     <li><a href="myorderq.jsp">已购课程</a></li>
-                    <li><a href="myprod.jsp"><课程评价></课程评价></a></li>
+                    <li><a href="myprod.jsp">课程评价</a></li>
                 </ul>
                 <h4>个人中心</h4>
                 <ul>

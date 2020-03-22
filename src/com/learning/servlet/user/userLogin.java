@@ -29,7 +29,7 @@ public class userLogin extends HttpServlet {
 
             out.write("<script>");
             out.write("alert('用户登录成功！');");
-            out.write("location.href='index.jsp'");
+            out.write("location.href='main.jsp'");
             out.write("</script>");
 
         }else {

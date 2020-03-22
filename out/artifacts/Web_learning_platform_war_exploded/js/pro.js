@@ -62,9 +62,9 @@ $(function () {
     });
     $(".btns a").click(function () {
         if ($(".categ p").hasClass("on")) {
-            if ($(this).children().hasClass("buy")) {
+            /*if ($(this).children().hasClass("buy")) {
                 $(this).attr("href", "order.jsp")
-            }
+            }*/
             $(".proIntro").css("border", "none");
             $(".num .please").hide()
         } else {
