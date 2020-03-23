@@ -74,8 +74,9 @@
 
                 <form action="#" method="get" class="fl"><input type="text" placeholder="热门搜索：MySQL入门" /><input
                         type="button" /></form>
-                <div class="btn fl clearfix"><a href="login.jsp"><img src="img/grzx.png" /></a><a href="#"
-                                                                                                  class="er1"><img src="img/ewm.png" /></a><a href="login.jsp"><img src="img/gwc.png" /></a>
+                <div class="btn fl clearfix"><a href="mygrxx.jsp"><img src="img/grzx.png" /></a>
+                    <a href="#" class="er1"><img src="img/ewm.png" /></a><a href="cart.jsp">
+                        <img src="img/gwc.png" /></a>
                     <a href="index.jsp" style="color: red;font-size:15px">退出登录</a>
                 </div>
             </div>

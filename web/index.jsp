@@ -25,7 +25,7 @@
       <li><a href="index.jsp">首页</a></li>
       <li><a href="#">热门课程</a>
         <div class="sList">
-          <div class="wrapper  clearfix"><a href="paint.jsp">
+          <div class="wrapper  clearfix"><a href="proDetail.jsp">
             <dl>
               <dt><img src="img/sql/001.jpg" /></dt>
               <dd>MySQL数据库工程师</dd>
@@ -92,81 +92,77 @@
     </ul>
   </div>
 
-
 <div class="people">
   <div class="wrapper">
-    <!--
-    <h2><img src="img/ih3.jpg" /></h2>
-    -->
-    <div class="pList clearfix tran"><a href="proDetail.jsp">
+    <div class="pList clearfix tran"><a href="proDetail/proDetail1.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/001.jpg" /><span class="abr"></span></dt>
         <dd>MySQL数据库工程师</dd>
         <dd><span>￥688.00</span></dd>
       </dl>
-    </a><a href="proDetail.jsp">
+    </a><a href="proDetail/proDetail2.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/002.jpg" /><span class="abr"></span></dt>
         <dd>MySQL数据库基础与进阶</dd>
         <dd><span>￥188.00</span></dd>
       </dl>
-    </a><a href="proDetail.jsp">
+    </a><a href="proDetail/proDetail3.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/003.png" /><span class="abr"></span></dt>
         <dd>MySQL数据库入门</dd>
         <dd><span>￥599.00</span></dd>
       </dl>
-    </a><a href="proDetail.jsp">
+    </a><a href="proDetail/proDetail4.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/004.jpg" /><span class="abr"></span></dt>
         <dd>MySQL数据库/SQL数据分析教程</dd>
         <dd><span>￥928.00</span></dd>
       </dl>
     </a></div>
-    <div class="pList clearfix tran"><a href="proDetail.jsp">
+    <div class="pList clearfix tran"><a href="proDetail/proDetail5.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/005.jpg" /><span class="abr"></span></dt>
         <dd>MySQL数据库基础</dd>
         <dd><span>￥228.00</span></dd>
       </dl>
-    </a><a href="mianfei.jsp">
+    </a><a href="proDetail/proDetail6.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/006.jpg" /><span class="abr"></span></dt>
         <dd>MySQL数据库开发教程</dd>
         <dd><span>免费</span></dd>
       </dl>
-    </a><a href="proDetail.html">
+    </a><a href="proDetail/proDetail7.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/007.jpg" /><span class="abr"></span></dt>
         <dd>MySQL从入门到精通</dd>
         <dd><span>￥666.00</span></dd>
       </dl>
-    </a><a href="mianfei.jsp">
+    </a><a href="proDetail/proDetail8.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/008.jpg" /><span class="abr"></span></dt>
         <dd>MySQL开发（C/C++学习指南系列）</dd>
         <dd><span>免费</span></dd>
       </dl>
     </a></div>
-    <div class="pList clearfix tran"><a href="proDetail.jsp">
+    <div class="pList clearfix tran"><a href="proDetail/proDetail9.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/009.jpg" /><span class="abr"></span></dt>
         <dd>入门与基础管理MySQL</dd>
         <dd><span>￥520.00</span></dd>
       </dl>
-    </a><a href="proDetail.jsp">
+    </a><a href="proDetail/proDetail10.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/010.png" /><span class="abr"></span></dt>
         <dd>一次性搞定数据库事务</dd>
         <dd><span>￥189.00</span></dd>
       </dl>
-    </a><a href="proDetail.jsp">
+    </a><a href="proDetail/proDetail11.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/011.png" /><span class="abr"></span></dt>
         <dd>MySQL8.0跨平台编程实践</dd>
         <dd><span>￥148.00</span></dd>
       </dl>
-    </a><a href="proDetail.jsp">
+    </a><a href="proDetail/proDetail12.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/012.jpg" /><span class="abr"></span></dt>
         <dd>MySQL数据库原理</dd>

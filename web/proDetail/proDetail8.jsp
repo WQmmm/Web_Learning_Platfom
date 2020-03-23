@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: lenovo
-  Date: 2020/2/20
-  Time: 19:59
+  Date: 2020/2/28
+  Time: 10:02
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -10,12 +10,11 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>课程详情</title>
-    <link rel="stylesheet" type="text/css" href="css/public.css"/>
-    <link rel="stylesheet" type="text/css" href="css/proDetail.css"/>
+    <title>免费课程</title>
+    <link rel="stylesheet" type="text/css" href="../css/public.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/proDetail.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/mianfei.css">
 </head>
-<body><!------------------------------head------------------------------>
-<!------------------------------head------------------------------>
 <div class="head">
     <div class="wrapper clearfix">
 
@@ -80,26 +79,27 @@
             </div>
         </div>
     </div>
-</div>
-<!-----------------------Detail------------------------------>
+</div><!-----------------------Detail------------------------------>
 <div class="detCon">
     <div class="proDet wrapper">
         <div class="proCon clearfix">
-            <div class="proImg fl"><img class="det" src="img/sql/001.jpg"/>
+            <div class="proImg fl"><img class="det" src="../img/sql/008.jpg"/>
             </div>
             <div class="fr intro">
                 <div class="title"><h4>MySQL数据库工程师</h4>
-                    <p>讲师：倪山三 &nbsp 潘微 &nbsp 杜明友</p>
-                    <p>本课程由一线DBA团队打造，助你掌握MySQL的企业应用方法，管理MySQL是互联网应用开发工程师和数据库管理员必知必会的技能。</p>
-                    <p>课程主要内容：<br/>1.MySQL数据库基础<br/>2.数据库对象与应用<br/>3.MySQL事务与存储引擎<br/>4.MySQL应用优化<br/>5.MySQL运维实践<br/>6.MySQL高级技术架构<br/>7.MySQL综合考核</p>
-                    <span>￥688.00<br/></span></div>
-                <div class="btns clearfix"><a href="ok.jsp"><p class="buy fl">立即购买</p></a><a href="cart.jsp"><p class="cart fr">
-                    加入购物车</p></a></div>
+                    <p>讲师：&nbsp高新强</p>
+                    <p>课程目的：让初学者快速掌握数据库的基本语法。</p>
+                    <p>适用人群：在校大学生或正在求职的应届毕业生，数据库开发人员、程序开发人员、相关专业及技术爱好者。</p>
+                    <p>课程主要内容：<br/>1.Mysql入门<br/>2.数据库及数据相关操作<br/>3.MySQL操作数据表记录<br/>4.MySQL数据库查询<br/>5.MySQL数据库多表查询<br/>6.MySQL常用函数<br/>7.MySQL高级对象</p>
+                    <div class="btns clearfix"><a href="study.jsp"><p class="buy fl" >立即学习</p></a>
+                        <a href="/video/001.mp4" target="_blank"><p class="cart fr">
+                            观看课程简介</p></a>
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-
 </div><!--返回顶部-->
 <div class="gotop"><a href="cart.jsp">
     <dl class="goCart">
@@ -125,6 +125,20 @@
     <p>400-800-8200</p></div>
 <div class="msk"></div><!--footer-->
 <div class="footer">
+    <!--
+    <div class="top">
+        <div class="wrapper">
+            <div class="clearfix"><a href="#2" class="fl"><img src="img/foot1.png"/></a><span class="fl">7天无理由退货</span>
+            </div>
+            <div class="clearfix"><a href="#2" class="fl"><img src="img/foot2.png"/></a><span class="fl">15天免费换货</span>
+            </div>
+            <div class="clearfix"><a href="#2" class="fl"><img src="img/foot3.png"/></a><span class="fl">满599包邮</span>
+            </div>
+            <div class="clearfix"><a href="#2" class="fl"><img src="img/foot4.png"/></a><span class="fl">手机特色服务</span>
+            </div>
+        </div>
+    </div>
+    -->
     <p class="dibu">数据库原理网上学习平台</p></div>
 <script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/jquery.SuperSlide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
