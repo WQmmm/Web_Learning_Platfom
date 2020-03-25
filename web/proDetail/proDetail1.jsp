@@ -93,8 +93,9 @@
                     <p>本课程由一线DBA团队打造，助你掌握MySQL的企业应用方法，管理MySQL是互联网应用开发工程师和数据库管理员必知必会的技能。</p>
                     <p>课程主要内容：<br/>1.MySQL数据库基础<br/>2.数据库对象与应用<br/>3.MySQL事务与存储引擎<br/>4.MySQL应用优化<br/>5.MySQL运维实践<br/>6.MySQL高级技术架构<br/>7.MySQL综合考核</p>
                     <span>￥688.00<br/></span></div>
-                <div class="btns clearfix"><a href="../ok.jsp"><p class="buy fl">立即购买</p></a><a href="../cart.jsp"><p class="cart fr">
+                <div class="btns clearfix"><a href="/userPay"><p class="buy fl">立即购买</p></a><a href="../cart.jsp"><p class="cart fr">
                     加入购物车</p></a></div>
+
             </div>
         </div>
     </div>
@@ -140,6 +141,12 @@
     effect: "leftLoop",
     autoPlay: true,
     vis: 1
+});</script>
+<script type="text/javascript">$(".buy").click(function () {
+    <%
+        session.setAttribute("courseName","MySQL数据库工程师");
+        session.setAttribute("location","001.jpg");
+    %>
 });</script>
 </body>
 </html>

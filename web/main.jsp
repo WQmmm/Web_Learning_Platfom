@@ -74,10 +74,11 @@
 
                 <form action="#" method="get" class="fl"><input type="text" placeholder="热门搜索：MySQL入门" /><input
                         type="button" /></form>
-                <div class="btn fl clearfix"><a href="mygrxx.jsp"><img src="img/grzx.png" /></a>
-                    <a href="#" class="er1"><img src="img/ewm.png" /></a><a href="cart.jsp">
-                        <img src="img/gwc.png" /></a>
-                    <a href="index.jsp" style="color: red;font-size:15px">退出登录</a>
+                <div class="btn fl clearfix">
+                    <a href="mygrxx.jsp"><img src="img/grzx.png" /></a>
+                    <a href="cart.jsp"><img src="img/gwc.png" /></a>
+                    <a href="#" class="er1" style="font-size: 12px">欢迎，${userLogin}</a>
+                    <a href="index.jsp" style="font-size: 12px">退出登录</a>
                 </div>
             </div>
         </div>
@@ -98,7 +99,7 @@
         <!--
         <h2><img src="img/ih3.jpg" /></h2>
         -->
-        <div class="pList clearfix tran"><a href="proDetail.jsp">
+        <div class="pList clearfix tran"><a href="/proDetail/proDetail1.jsp">
             <dl>
                 <dt><span class="abl"></span><img src="img/sql/001.jpg" /><span class="abr"></span></dt>
                 <dd>MySQL数据库工程师</dd>

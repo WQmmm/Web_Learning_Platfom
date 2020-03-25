@@ -96,7 +96,8 @@
   <div class="wrapper">
     <div class="pList clearfix tran"><a href="proDetail/proDetail1.jsp">
       <dl>
-        <dt><span class="abl"></span><img src="img/sql/001.jpg" /><span class="abr"></span></dt>
+        <%! String location = "img/sql/001.jpg";%>
+        <dt><span class="abl"></span><img src="<%= location %>" /><span class="abr"></span></dt>
         <dd>MySQL数据库工程师</dd>
         <dd><span>￥688.00</span></dd>
       </dl>
@@ -115,7 +116,7 @@
     </a><a href="proDetail/proDetail4.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/004.jpg" /><span class="abr"></span></dt>
-        <dd>MySQL数据库/SQL数据分析教程</dd>
+        <dd>MySQL数据分析教程</dd>
         <dd><span>￥928.00</span></dd>
       </dl>
     </a></div>
@@ -140,7 +141,7 @@
     </a><a href="proDetail/proDetail8.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/008.jpg" /><span class="abr"></span></dt>
-        <dd>MySQL开发（C/C++学习指南系列）</dd>
+        <dd>MySQL开发指南</dd>
         <dd><span>免费</span></dd>
       </dl>
     </a></div>

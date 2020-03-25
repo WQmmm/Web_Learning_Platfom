@@ -23,7 +23,7 @@
     <div class="wrapper clearfix">
         <div class="zuo fl">
             <h3><a href="#"><img src="img/tx.png"/></a>
-                <p class="clearfix"><span class="fl">[lyyyyy]</span><span class="fr">[退出登录]</span></p></h3>
+                <p class="clearfix"><span class="fl">[${userLogin}]</span><span class="fr">[退出登录]</span></p></h3>
             <div><h4>我的交易</h4>
                 <ul>
                     <li><a href="cart.jsp">我的购物车</a></li>
@@ -47,7 +47,7 @@
                     <p id="avatar">修改头像</p></a></div>
                 <div class="xx"><h3 class="clearfix"><strong class="fl">基础资料</strong><a href="#" class="fr" id="edit1">编辑</a>
                 </h3>
-                    <div>姓名：lyyyyy</div>
+                    <div>姓名：${userLogin}</div>
                     <div>手机号码：15489314822</div>
                     <div>性别：男</div>
                     <h3>高级设置</h3><!--<div><span class="fl">银行卡</span><a href="#" class="fr">管理</a></div>-->

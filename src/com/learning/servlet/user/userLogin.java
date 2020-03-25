@@ -1,10 +1,13 @@
 package com.learning.servlet.user;
 
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
@@ -26,6 +29,13 @@ public class userLogin extends HttpServlet {
         int count = selectByNM(name, password);
         if(count > 0){
             PrintWriter out = resp.getWriter();
+
+            //保存用户的登录信息
+            ServletContext servletContext = getServletContext();
+
+
+            //保持用户信息
+            servletContext.setAttribute("userLogin", name);
 
             out.write("<script>");
             out.write("alert('用户登录成功！');");

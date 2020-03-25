@@ -23,7 +23,7 @@
     <div class="wrapper clearfix">
         <div class="zuo fl">
             <h3><a href="#"><img src="img/tx.png"/></a>
-                <p class="clearfix"><span class="fl">[lyyyyy]</span><a href="index.jsp">[退出登录]</a></p></h3>
+                <p class="clearfix"><span class="fl">[${userLogin}]</span><a href="index.jsp">[退出登录]</a></p></h3>
             <div><h4>我的交易</h4>
                 <ul>
                     <li><a href="cart.jsp">我的购物车</a></li>
@@ -49,7 +49,7 @@
                 <div class="word clearfix">
 
                 <div class="shohou clearfix"><a href="#" class="fl"><img src="img/sql/001.jpg"/></a>
-                    <p class="fl"><a href="#">MySQL数据库工程师</a><a href="#">¥99.00×1</a></p>
+                    <p class="fl"><a href="#">MySQL数据库工程师</a></p>
                     <p class="fr"><a href="study.jsp">开始学习</a><a href="video/001.mp4">观看课程简介</a></p></div>
                 </div>
             </div>

@@ -88,9 +88,9 @@
             <div class="proImg fl"><img class="det" src="../img/sql/004.jpg"/>
             </div>
             <div class="fr intro">
-                <div class="title"><h4>MySQL数据库/SQL数据分析</h4>
+                <div class="title"><h4>MySQ数据分析教程</h4>
                     <p>讲师：JAVA架构师鲨鱼</p>
-                    <p>适合人群：MySQL数据库/SQL数据分析教程</p>
+                    <p>适合人群：有一定SQL基础的人群</p>
                     <p>课程主要内容：<br/>1.MySQL快速入门<br/>2.MySQL基本概念<br/>3.MySQL用户管理<br/>4.MySQL管理数据库实例<br/>5.MySQL表定义<br/>6.MySQL表增删改查<br/>7.MySQL多表查询</p>
                     <span>928.00<br/></span></div>
                 <div class="btns clearfix"><a href="ok.jsp"><p class="buy fl">立即购买</p></a><a href="cart.jsp"><p class="cart fr">

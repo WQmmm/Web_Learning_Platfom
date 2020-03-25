@@ -31,7 +31,7 @@
             <form name="myform" id="myform" method="post">
                 <div class="result-title">
                     <div class="result-list">
-                        <a href="insert.html"><i class="icon-font"></i>新增作品</a>
+                        <a href="insert.html"><i class="icon-font"></i>新增课程</a>
                         <a id="batchDel" href="javascript:void(0)"><i class="icon-font"></i>批量删除</a>
                         <a id="updateOrd" href="javascript:void(0)"><i class="icon-font"></i>更新排序</a>
                     </div>
@@ -46,7 +46,7 @@
                             <th>操作</th>
                         </tr>
                         <c:forEach var="u" items="${userlist}">
-                        <tr>
+                         <tr>
                             <td class="tc"><input name="id{}" value="${u.id}" type="checkbox"></td>
                             <td>${u.id}</td>
                             <td>${u.name}</td>
