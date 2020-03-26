@@ -30,19 +30,6 @@ public class userAdd extends HttpServlet {
         String password = req.getParameter("password");
 
 
-        /*
-        System.out.println("id:" + id + "\t" + "name:" + name + "\t" + "password:" + pwd);
-        //创建用户实体
-        Userbean userbean = new Userbean(id, name, pwd);
-        //加入到数据库中
-        int count = 0;
-        try {
-            count = Userdao.insert(userbean);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }*/
-
-
         //加入数据库成功与否
         int count = register(id, name, password);
         if(count > 0){

@@ -16,18 +16,18 @@
 </head>
 <body>
 <div class="address mt">
-    <div class="wrapper clearfix"><a href="index.jsp" class="fl">首页</a><span>/</span><a href="mygxin.jsp" class="on">个人信息</a>
+    <div class="wrapper clearfix"><a href="main.jsp" class="fl">首页</a><span>/</span><a href="mygxin.jsp" class="on">个人信息</a>
     </div>
 </div><!------------------------------Bott------------------------------>
 <div class="Bott">
     <div class="wrapper clearfix">
         <div class="zuo fl">
             <h3><a href="#"><img src="img/tx.png"/></a>
-                <p class="clearfix"><span class="fl">[${userLogin}]</span><span class="fr">[退出登录]</span></p></h3>
+                <p class="clearfix"><span class="fl">[${username}]</span><span class="fr">[退出登录]</span></p></h3>
             <div><h4>我的交易</h4>
                 <ul>
                     <li><a href="cart.jsp">我的购物车</a></li>
-                    <li><a href="myorderq.jsp">已购课程</a></li>
+                    <li><a href="/coursePay">已购课程</a></li>
                     <li><a href="myprod.jsp">课程评价</a></li>
                 </ul>
                 <h4>个人中心</h4>

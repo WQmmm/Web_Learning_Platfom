@@ -1,5 +1,7 @@
 package com.learning.servlet.user;
 
+import com.learning.service.Userdao;
+
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -23,10 +25,14 @@ public class userLogin extends HttpServlet {
         resp.setContentType("text/html;charset=utf-8");
 
         //从页面获取参数
-        String name = req.getParameter("user_name");
+        String id = req.getParameter("user_id");
         String password = req.getParameter("user_pwd");
 
-        int count = selectByNM(name, password);
+        //用户登录
+        int count = selectByNM(id, password);
+        String username = Userdao.selectNameById(id);
+        //查询用户名
+
         if(count > 0){
             PrintWriter out = resp.getWriter();
 
@@ -35,8 +41,8 @@ public class userLogin extends HttpServlet {
 
 
             //保持用户信息
-            servletContext.setAttribute("userLogin", name);
-
+            servletContext.setAttribute("userLogin", id);
+            servletContext.setAttribute("username",username);
             out.write("<script>");
             out.write("alert('用户登录成功！');");
             out.write("location.href='main.jsp'");

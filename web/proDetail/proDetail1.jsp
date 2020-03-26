@@ -20,30 +20,30 @@
     <div class="wrapper clearfix">
 
         <ul class="clearfix" id="bott">
-            <li><a href="../index.jsp">首页</a></li>
+            <li><a href="../main.jsp">首页</a></li>
             <li><a href="#">热门课程</a>
                 <div class="sList">
-                    <div class="wrapper  clearfix"><a href="../0paint.jsp">
+                    <div class="wrapper  clearfix"><a href="paint.jsp">
                         <dl>
                             <dt><img src="../img/sql/001.jpg" /></dt>
                             <dd>MySQL数据库工程师</dd>
                         </dl>
-                    </a><a href="../paint.jsp">
+                    </a><a href="paint.jsp">
                         <dl>
                             <dt><img src="../img/sql/002.jpg" /></dt>
                             <dd>MySQL数据库基础与进阶</dd>
                         </dl>
-                    </a><a href="../paint.jsp">
+                    </a><a href="paint.jsp">
                         <dl>
                             <dt><img src="../img/sql/003.png" /></dt>
                             <dd>MySQL数据库入门</dd>
                         </dl>
-                    </a><a href="../paint.jsp">
+                    </a><a href="paint.jsp">
                         <dl>
                             <dt><img src="../img/sql/005.jpg" /></dt>
                             <dd>MySQL数据库基础</dd>
                         </dl>
-                    </a><a href="../paint.jsp">
+                    </a><a href="paint.jsp">
                         <dl>
                             <dt><img src="../img/sql/012.jpg" /></dt>
                             <dd>MySQL数据库原理</dd>
@@ -51,31 +51,31 @@
                     </a></div>
                 </div>
             </li>
-            <li><a href="../flowerDer.jsp">基础课程</a>
+            <li><a href="flowerDer.jsp">基础课程</a>
                 <div class="sList2">
-                    <div class="clearfix"><a href="../proList.html">SQL Server 教程</a><a href="../vase_proList.jsp">零基础学SQL Server</a></div>
+                    <div class="clearfix"><a href="proList.html">SQL Server 教程</a><a href="vase_proList.jsp">零基础学SQL Server</a></div>
                 </div>
             </li>
-            <li><a href="../decoration.jsp">高薪课程</a>
+            <li><a href="decoration.jsp">高薪课程</a>
                 <div class="sList2">
-                    <div class="clearfix"><a href="../zbproList.jsp">高性能SQL</a><a href="../bzproList.jsp">一天搞懂数据库索引</a></div>
+                    <div class="clearfix"><a href="zbproList.jsp">高性能SQL</a><a href="bzproList.jsp">一天搞懂数据库索引</a></div>
                 </div>
             </li>
-            <li><a href="../paint.jsp">公开课</a></li>
-            <li><a href="../perfume.jsp">微专业</a></li>
-            <li><a href="../idea.jsp">免费课程</a></li>
+            <li><a href="paint.jsp">公开课</a></li>
+            <li><a href="perfume.jsp">微专业</a></li>
+            <li><a href="idea.jsp">免费课程</a></li>
         </ul>
 
         <div class="clearfix" id="top">
             <h1 class="fl"><a href="../index.jsp"><img src="" /></a></h1>
             <div class="fr clearfix" id="top1">
-                <p class="fl"><a href="../login.jsp" id="login">登录</a><a href="../reg.jsp" id="reg">注册</a>
-                </p>
                 <form action="#" method="get" class="fl"><input type="text" placeholder="热门搜索：MySQL入门" /><input
                         type="button" /></form>
-                <div class="btn fl clearfix"><a href="../login.jsp"><img src="../img/grzx.png" /></a>
-                    <a href="#" class="er1"><img src="../img/ewm.png" /></a><a href="../login.jsp"><img src="../img/gwc.png" /></a>
-                    <p><a href="#"><img src="" /></a></p>
+                <div class="btn fl clearfix">
+                    <a href="../mygrxx.jsp"><img src="../img/grzx.png" /></a>
+                    <a href="../cart.jsp"><img src="../img/gwc.png" /></a>
+                    <a href="#" class="er1" style="font-size: 12px">欢迎，${username}</a>
+                    <a href="/index.jsp" style="font-size: 12px">退出登录</a>
                 </div>
             </div>
         </div>
@@ -88,14 +88,13 @@
             <div class="proImg fl"><img class="det" src="../img/sql/001.jpg"/>
             </div>
             <div class="fr intro">
-                <div class="title"><h4>MySQL数据库工程师</h4>
+                <div class="title"><h4>MySQL数据库基础与进阶</h4>
                     <p>讲师：倪山三 &nbsp 潘微 &nbsp 杜明友</p>
                     <p>本课程由一线DBA团队打造，助你掌握MySQL的企业应用方法，管理MySQL是互联网应用开发工程师和数据库管理员必知必会的技能。</p>
                     <p>课程主要内容：<br/>1.MySQL数据库基础<br/>2.数据库对象与应用<br/>3.MySQL事务与存储引擎<br/>4.MySQL应用优化<br/>5.MySQL运维实践<br/>6.MySQL高级技术架构<br/>7.MySQL综合考核</p>
-                    <span>￥688.00<br/></span></div>
+                    <span>￥188.00<br/></span></div>
                 <div class="btns clearfix"><a href="/userPay"><p class="buy fl">立即购买</p></a><a href="../cart.jsp"><p class="cart fr">
                     加入购物车</p></a></div>
-
             </div>
         </div>
     </div>
@@ -112,7 +111,7 @@
         <dt><img src="../img/gt2.png"/></dt>
         <dd>联系<br/>客服</dd>
     </dl>
-</a><a href="../mygxin.html">
+</a><a href="mygxin.html">
     <dl>
         <dt><img src="../img/gt3.png"/></dt>
         <dd>个人<br/>中心</dd>
@@ -142,7 +141,7 @@
     autoPlay: true,
     vis: 1
 });</script>
-<script type="text/javascript">$(".buy").click(function () {
+<script type="text/javascript">$(".buy,.cart").click(function () {
     <%
         session.setAttribute("courseName","MySQL数据库工程师");
         session.setAttribute("location","001.jpg");

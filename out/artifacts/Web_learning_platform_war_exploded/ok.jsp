@@ -17,7 +17,7 @@
 <body>
 
     </div>
-    <p class="ok">支付成功！剩余<span>5</span>秒<a href="myorderq.jsp">返回订单页</a></p>
+    <p class="ok">支付成功！<a href="main.jsp">返回主页</a></p>
 </div>
 
 <div class="like"><h4>猜你喜欢</h4>
@@ -69,13 +69,8 @@
                         <dd>MySQL从入门到精通</dd>
                         <dd>￥666.00</dd>
                     </dl>
-                </a><a href="proDetail.jsp">
-                    <dl>
-                        <dt><img src="img/sql/008.jpg"></dt>
-                        <dd>【最家】复古文艺风玻璃花瓶</dd>
-                        <dd>￥193.20</dd>
-                    </dl>
-                </a><a href="proDetail.jsp">
+                </a>
+                    <a href="proDetail.jsp">
                     <dl>
                         <dt><img src="img/sql/009.jpg"></dt>
                         <dd>MySQL开发指南</dd>
@@ -94,18 +89,6 @@
 </div><!--footer-->
 <div class="footer">
     <div class="top">
-        <!--
-        <div class="wrapper">
-            <div class="clearfix"><a href="#2" class="fl"><img src="img/foot1.png"/></a><span class="fl">7天无理由退货</span>
-            </div>
-            <div class="clearfix"><a href="#2" class="fl"><img src="img/foot2.png"/></a><span class="fl">15天免费换货</span>
-            </div>
-            <div class="clearfix"><a href="#2" class="fl"><img src="img/foot3.png"/></a><span class="fl">满599包邮</span>
-            </div>
-            <div class="clearfix"><a href="#2" class="fl"><img src="img/foot4.png"/></a><span class="fl">手机特色服务</span>
-            </div>
-        </div>
-        -->
     </div>
     <p class="dibu">数据库原理网上学习平台</p></div>
 <script src="js/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>

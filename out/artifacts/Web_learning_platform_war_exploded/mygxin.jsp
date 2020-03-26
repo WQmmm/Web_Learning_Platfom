@@ -23,7 +23,7 @@
     <div class="wrapper clearfix">
         <div class="zuo fl">
             <h3><a href="#"><img src="img/tx.png"/></a>
-                <p class="clearfix"><span class="fl">[lyyyy]</span><span class="fr">[退出登录]</span></p></h3>
+                <p class="clearfix"><span class="fl">${username}</span><span class="fr">[退出登录]</span></p></h3>
             <div><h4>我的交易</h4>
                 <ul>
                     <li><a href="cart.jsp">我的购物车</a></li>

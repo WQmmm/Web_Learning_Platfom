@@ -60,18 +60,6 @@ $(function () {
             $(this).parent("p").removeClass("on")
         })
     });
-    $(".btns a").click(function () {
-        if ($(".categ p").hasClass("on")) {
-            /*if ($(this).children().hasClass("buy")) {
-                $(this).attr("href", "order.jsp")
-            }*/
-            $(".proIntro").css("border", "none");
-            $(".num .please").hide()
-        } else {
-            $(".proIntro").css("border", "1px solid #c10000");
-            $(".num .please").show()
-        }
-    });
     $(".smallImg > img").mouseover(function () {
         $(this).css("border", "1px solid #c10000").siblings("img").css("border", "none");
         var c = $(this).attr("data-src");

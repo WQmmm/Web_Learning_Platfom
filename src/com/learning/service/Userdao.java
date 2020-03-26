@@ -131,7 +131,7 @@ public class Userdao {
         return userbean;
     }
 
-    public static int selectByNM(String name, String password){
+    public static int selectByNM(String id, String password){
         Connection conn = null;
         ResultSet resultSet = null;
         PreparedStatement preparedStatement = null;
@@ -139,9 +139,9 @@ public class Userdao {
 
         try {
             conn = Basedao.getConnection();
-            String sql = "select count(*) from user where name like ? and password like ?";
+            String sql = "select count(*) from user where id like ? and password like ?";
             preparedStatement = conn.prepareStatement(sql);
-            preparedStatement.setString(1, name);
+            preparedStatement.setString(1, id);
             preparedStatement.setString(2,password);
             resultSet = preparedStatement.executeQuery();
             while (resultSet.next()){
@@ -153,6 +153,29 @@ public class Userdao {
             Basedao.closeAll(resultSet,preparedStatement,conn);
         }
         return count;
+    }
+
+    public static String selectNameById(String id){
+        Connection conn = null;
+        ResultSet resultSet = null;
+        PreparedStatement preparedStatement = null;
+        String userName = null;
+
+        try {
+            conn = Basedao.getConnection();
+            String sql = "select name from user where id like ? ";
+            preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setString(1, id);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                userName = resultSet.getString(1);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            Basedao.closeAll(resultSet,preparedStatement,conn);
+        }
+        return userName;
     }
 
     public static int register(String id, String name, String password){

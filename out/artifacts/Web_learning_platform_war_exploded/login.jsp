@@ -21,7 +21,7 @@
         <!--
         <div class="msg-warn hide"><b></b>公共场所不建议自动登录，以防账号丢失</div>
         -->
-        <p><input type="text" name="user_name" value="" placeholder="昵称/邮箱/手机号"></p>
+        <p><input type="text" name="user_id" value="" placeholder="昵称/邮箱/手机号"></p>
         <p><input type="text" name="user_pwd" value="" placeholder="密码"></p>
         <p><input type="submit" name="login" value="登  录"></p>
         <p class="txt"><a class="" href="reg.jsp">免费注册</a><a href="forget.jsp">忘记密码？</a></p></form>

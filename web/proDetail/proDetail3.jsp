@@ -69,13 +69,13 @@
         <div class="clearfix" id="top">
             <h1 class="fl"><a href="../index.jsp"><img src="" /></a></h1>
             <div class="fr clearfix" id="top1">
-                <p class="fl"><a href="../login.jsp" id="login">登录</a><a href="../reg.jsp" id="reg">注册</a>
-                </p>
                 <form action="#" method="get" class="fl"><input type="text" placeholder="热门搜索：MySQL入门" /><input
                         type="button" /></form>
-                <div class="btn fl clearfix"><a href="../login.jsp"><img src="../img/grzx.png" /></a><a href="#"
-                                                                                                        class="er1"><img src="../img/ewm.png" /></a><a href="../login.jsp"><img src="../img/gwc.png" /></a>
-                    <p><a href="#"><img src="" /></a></p>
+                <div class="btn fl clearfix">
+                    <a href="../mygrxx.jsp"><img src="../img/grzx.png" /></a>
+                    <a href="../cart.jsp"><img src="../img/gwc.png" /></a>
+                    <a href="#" class="er1" style="font-size: 12px">欢迎，${username}</a>
+                    <a href="/index.jsp" style="font-size: 12px">退出登录</a>
                 </div>
             </div>
         </div>
@@ -93,7 +93,7 @@
                     <p>适用人群：零基础想学习mysql数据库的学员</p>
                     <p>课程主要内容：<br/>1.MySQL入门<br/>2.MySQL查询<br/>3.数据库约束<br/>4.多表查询<br/>5.数据库事务</p>
                     <span>599.00<br/></span></div>
-                <div class="btns clearfix"><a href="../ok.jsp"><p class="buy fl">立即购买</p></a><a href="../cart.jsp"><p class="cart fr">
+                <div class="btns clearfix"><a href="/userPay"><p class="buy fl">立即购买</p></a><a href="../cart.jsp"><p class="cart fr">
                     加入购物车</p></a></div>
             </div>
         </div>
@@ -140,6 +140,12 @@
     effect: "leftLoop",
     autoPlay: true,
     vis: 1
+});</script>
+<script type="text/javascript">$(".buy,.cart").click(function () {
+    <%
+        session.setAttribute("courseName","MySQL数据库入门");
+        session.setAttribute("location","003.png");
+    %>
 });</script>
 </body>
 </html>

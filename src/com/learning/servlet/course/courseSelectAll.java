@@ -19,6 +19,8 @@ public class courseSelectAll extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //super.doGet(req, resp);
+        req.setCharacterEncoding("UTF-8");
+        resp.setContentType("text/html;charset=utf-8");
 
         int cpage = 1;   //当前所在的页数
         int count = 5;     //每页所能显示最大的记录数

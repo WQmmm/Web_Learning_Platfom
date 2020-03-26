@@ -20,7 +20,7 @@
     <div class="wrapper clearfix">
 
         <ul class="clearfix" id="bott">
-            <li><a href="index.jsp">首页</a></li>
+            <li><a href="../main.jsp">首页</a></li>
             <li><a href="#">热门课程</a>
                 <div class="sList">
                     <div class="wrapper  clearfix"><a href="paint.jsp">
@@ -69,13 +69,13 @@
         <div class="clearfix" id="top">
             <h1 class="fl"><a href="index.jsp"><img src="" /></a></h1>
             <div class="fr clearfix" id="top1">
-                <p class="fl"><a href="login.jsp" id="login">登录</a><a href="reg.jsp" id="reg">注册</a>
-                </p>
                 <form action="#" method="get" class="fl"><input type="text" placeholder="热门搜索：MySQL入门" /><input
                         type="button" /></form>
-                <div class="btn fl clearfix"><a href="login.jsp"><img src="img/grzx.png" /></a><a href="#"
-                                                                                                  class="er1"><img src="img/ewm.png" /></a><a href="login.jsp"><img src="img/gwc.png" /></a>
-                    <p><a href="#"><img src="" /></a></p>
+                <div class="btn fl clearfix">
+                    <a href="../mygrxx.jsp"><img src="../img/grzx.png" /></a>
+                    <a href="../cart.jsp"><img src="../img/gwc.png" /></a>
+                    <a href="#" class="er1" style="font-size: 12px">欢迎，${username}</a>
+                    <a href="/index.jsp" style="font-size: 12px">退出登录</a>
                 </div>
             </div>
         </div>
@@ -88,12 +88,12 @@
             <div class="proImg fl"><img class="det" src="../img/sql/005.jpg"/>
             </div>
             <div class="fr intro">
-                <div class="title"><h4>MySQL数据库入门</h4>
+                <div class="title"><h4>MySQL数据库基础</h4>
                     <p>讲师：倪山三 &nbsp 潘微 &nbsp 杜明友</p>
                     <p>本课程由一线DBA团队打造，助你掌握MySQL的企业应用方法，管理MySQL是互联网应用开发工程师和数据库管理员必知必会的技能。</p>
                     <p>课程主要内容：<br/>1.MySQL数据库基础<br/>2.数据库对象与应用<br/>3.MySQL事务与存储引擎<br/>4.MySQL应用优化<br/>5.MySQL运维实践<br/>6.MySQL高级技术架构<br/>7.MySQL综合考核</p>
                     <span>928.00<br/></span></div>
-                <div class="btns clearfix"><a href="ok.jsp"><p class="buy fl">立即购买</p></a><a href="cart.jsp"><p class="cart fr">
+                <div class="btns clearfix"><a href="/userPay"><p class="buy fl">立即购买</p></a><a href="cart.jsp"><p class="cart fr">
                     加入购物车</p></a></div>
             </div>
         </div>
@@ -140,6 +140,12 @@
     effect: "leftLoop",
     autoPlay: true,
     vis: 1
+});</script>
+<script type="text/javascript">$(".buy,.cart").click(function () {
+    <%
+        session.setAttribute("courseName","MySQL数据库基础");
+        session.setAttribute("location","005.jpg");
+    %>
 });</script>
 </body>
 </html>

@@ -86,7 +86,7 @@
     <!-----------------site------------------->
     <div class="site"><p class=" wrapper clearfix"><span class="fl">购物车</span><img class="top"
                                                                                    src="img/temp/cartTop01.png"><a
-            href="index.jsp" class="fr">继续购物&gt;</a></p></div><!-----------------table------------------->
+            href="main.jsp" class="fr">继续购物&gt;</a></p></div><!-----------------table------------------->
     <div class="table wrapper">
         <div class="tr">
             <div>商品</div>
@@ -223,22 +223,8 @@
 <div class="mask"></div><!-------------------mask内容------------------->
 <div class="proDets"><img class="off" src="img/temp/off.jpg"/>
     <div class="proCon clearfix">
-        <div class="proImg fr"><img class="list" src="img/temp/proDet.jpg"/>
-            <div class="smallImg clearfix"><img src="img/temp/proDet01.jpg" data-src="img/temp/proDet01_big.jpg"><img
-                    src="img/temp/proDet02.jpg" data-src="img/temp/proDet02_big.jpg"><img src="img/temp/proDet03.jpg"
-                                                                                          data-src="img/temp/proDet03_big.jpg"><img
-                    src="img/temp/proDet04.jpg" data-src="img/temp/proDet04_big.jpg"></div>
-        </div>
+
         <div class="fl">
-            <div class="proIntro change"><p>颜色分类</p>
-                <div class="smallImg clearfix"><p class="fl on"><img src="img/temp/prosmall01.jpg" alt="白瓷花瓶+20支快乐花"
-                                                                     data-src="img/temp/proBig01.jpg"></p>
-                    <p class="fl"><img src="img/temp/prosmall02.jpg" alt="白瓷花瓶+20支兔尾巴草"
-                                       data-src="img/temp/proBig02.jpg"></p>
-                    <p class="fl"><img src="img/temp/prosmall03.jpg" alt="20支快乐花" data-src="img/temp/proBig03.jpg"></p>
-                    <p class="fl"><img src="img/temp/prosmall04.jpg" alt="20支兔尾巴草" data-src="img/temp/proBig04.jpg"></p>
-                </div>
-            </div>
             <div class="changeBtn clearfix"><a href="#2" class="fl"><p class="buy">确认</p></a><a href="#2" class="fr"><p
                     class="cart">取消</p></a></div>
         </div>

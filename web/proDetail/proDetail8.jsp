@@ -19,7 +19,7 @@
     <div class="wrapper clearfix">
 
         <ul class="clearfix" id="bott">
-            <li><a href="index.jsp">首页</a></li>
+            <li><a href="../main.jsp">首页</a></li>
             <li><a href="#">热门课程</a>
                 <div class="sList">
                     <div class="wrapper  clearfix"><a href="paint.jsp">
@@ -68,13 +68,13 @@
         <div class="clearfix" id="top">
             <h1 class="fl"><a href="index.jsp"><img src="" /></a></h1>
             <div class="fr clearfix" id="top1">
-                <p class="fl"><a href="login.jsp" id="login">登录</a><a href="reg.jsp" id="reg">注册</a>
-                </p>
                 <form action="#" method="get" class="fl"><input type="text" placeholder="热门搜索：MySQL入门" /><input
                         type="button" /></form>
-                <div class="btn fl clearfix"><a href="login.jsp"><img src="img/grzx.png" /></a><a href="#"
-                                                                                                  class="er1"><img src="img/ewm.png" /></a><a href="login.jsp"><img src="img/gwc.png" /></a>
-                    <p><a href="#"><img src="" /></a></p>
+                <div class="btn fl clearfix">
+                    <a href="../mygrxx.jsp"><img src="../img/grzx.png" /></a>
+                    <a href="../cart.jsp"><img src="../img/gwc.png" /></a>
+                    <a href="#" class="er1" style="font-size: 12px">欢迎，${username}</a>
+                    <a href="/index.jsp" style="font-size: 12px">退出登录</a>
                 </div>
             </div>
         </div>
@@ -86,12 +86,12 @@
             <div class="proImg fl"><img class="det" src="../img/sql/008.jpg"/>
             </div>
             <div class="fr intro">
-                <div class="title"><h4>MySQL数据库工程师</h4>
+                <div class="title"><h4>MySQL开发指南</h4>
                     <p>讲师：&nbsp高新强</p>
                     <p>课程目的：让初学者快速掌握数据库的基本语法。</p>
                     <p>适用人群：在校大学生或正在求职的应届毕业生，数据库开发人员、程序开发人员、相关专业及技术爱好者。</p>
                     <p>课程主要内容：<br/>1.Mysql入门<br/>2.数据库及数据相关操作<br/>3.MySQL操作数据表记录<br/>4.MySQL数据库查询<br/>5.MySQL数据库多表查询<br/>6.MySQL常用函数<br/>7.MySQL高级对象</p>
-                    <div class="btns clearfix"><a href="study.jsp"><p class="buy fl" >立即学习</p></a>
+                    <div class="btns clearfix"><a href="../study.jsp"><p class="buy fl" >立即学习</p></a>
                         <a href="/video/001.mp4" target="_blank"><p class="cart fr">
                             观看课程简介</p></a>
 
@@ -154,6 +154,12 @@
     effect: "leftLoop",
     autoPlay: true,
     vis: 1
+});</script>
+<script type="text/javascript">$(".buy,.cart").click(function () {
+    <%
+        session.setAttribute("courseName","MySQL开发指南");
+        session.setAttribute("location","008.jpg");
+    %>
 });</script>
 </body>
 </html>

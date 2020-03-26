@@ -30,22 +30,22 @@
               <dt><img src="img/sql/001.jpg" /></dt>
               <dd>MySQL数据库工程师</dd>
             </dl>
-          </a><a href="paint.jsp">
+          </a><a href="proDetail/proDetail2.jsp">
             <dl>
               <dt><img src="img/sql/002.jpg" /></dt>
               <dd>MySQL数据库基础与进阶</dd>
             </dl>
-          </a><a href="paint.jsp">
+          </a><a href="proDetail/proDetail3.jsp">
             <dl>
               <dt><img src="img/sql/003.png" /></dt>
               <dd>MySQL数据库入门</dd>
             </dl>
-          </a><a href="paint.jsp">
+          </a><a href="proDetail/proDetail5.jsp">
             <dl>
               <dt><img src="img/sql/005.jpg" /></dt>
               <dd>MySQL数据库基础</dd>
             </dl>
-          </a><a href="paint.jsp">
+          </a><a href="proDetail/proDetail12.jsp">
             <dl>
               <dt><img src="img/sql/012.jpg" /></dt>
               <dd>MySQL数据库原理</dd>
@@ -53,19 +53,19 @@
           </a></div>
         </div>
       </li>
-      <li><a href="flowerDer.jsp">基础课程</a>
+      <li><a href="#">基础课程</a>
         <div class="sList2">
-          <div class="clearfix"><a href="proList.html">SQL Server 教程</a><a href="vase_proList.jsp">零基础学SQL Server</a></div>
+          <div class="clearfix"><a href="#">SQL Server 教程</a><a href="#">零基础学SQL Server</a></div>
         </div>
       </li>
-      <li><a href="decoration.jsp">高薪课程</a>
+      <li><a href="#">高薪课程</a>
         <div class="sList2">
-          <div class="clearfix"><a href="zbproList.jsp">高性能SQL</a><a href="bzproList.jsp">一天搞懂数据库索引</a></div>
+          <div class="clearfix"><a href="#">高性能SQL</a><a href="#">一天搞懂数据库索引</a></div>
         </div>
       </li>
-      <li><a href="paint.jsp">公开课</a></li>
-      <li><a href="perfume.jsp">微专业</a></li>
-      <li><a href="idea.jsp">免费课程</a></li>
+      <li><a href="#">公开课</a></li>
+      <li><a href="#">微专业</a></li>
+      <li><a href="#">免费课程</a></li>
     </ul>
 
     <div class="clearfix" id="top">
@@ -94,76 +94,76 @@
 
 <div class="people">
   <div class="wrapper">
-    <div class="pList clearfix tran"><a href="proDetail/proDetail1.jsp">
+    <div class="pList clearfix tran"><a href="login.jsp">
       <dl>
         <%! String location = "img/sql/001.jpg";%>
         <dt><span class="abl"></span><img src="<%= location %>" /><span class="abr"></span></dt>
         <dd>MySQL数据库工程师</dd>
         <dd><span>￥688.00</span></dd>
       </dl>
-    </a><a href="proDetail/proDetail2.jsp">
+    </a><a href="login.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/002.jpg" /><span class="abr"></span></dt>
         <dd>MySQL数据库基础与进阶</dd>
         <dd><span>￥188.00</span></dd>
       </dl>
-    </a><a href="proDetail/proDetail3.jsp">
+    </a><a href="login.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/003.png" /><span class="abr"></span></dt>
         <dd>MySQL数据库入门</dd>
         <dd><span>￥599.00</span></dd>
       </dl>
-    </a><a href="proDetail/proDetail4.jsp">
+    </a><a href="login.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/004.jpg" /><span class="abr"></span></dt>
         <dd>MySQL数据分析教程</dd>
         <dd><span>￥928.00</span></dd>
       </dl>
     </a></div>
-    <div class="pList clearfix tran"><a href="proDetail/proDetail5.jsp">
+    <div class="pList clearfix tran"><a href="login.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/005.jpg" /><span class="abr"></span></dt>
         <dd>MySQL数据库基础</dd>
         <dd><span>￥228.00</span></dd>
       </dl>
-    </a><a href="proDetail/proDetail6.jsp">
+    </a><a href="login.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/006.jpg" /><span class="abr"></span></dt>
         <dd>MySQL数据库开发教程</dd>
         <dd><span>免费</span></dd>
       </dl>
-    </a><a href="proDetail/proDetail7.jsp">
+    </a><a href="login.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/007.jpg" /><span class="abr"></span></dt>
         <dd>MySQL从入门到精通</dd>
         <dd><span>￥666.00</span></dd>
       </dl>
-    </a><a href="proDetail/proDetail8.jsp">
+    </a><a href="login.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/008.jpg" /><span class="abr"></span></dt>
         <dd>MySQL开发指南</dd>
         <dd><span>免费</span></dd>
       </dl>
     </a></div>
-    <div class="pList clearfix tran"><a href="proDetail/proDetail9.jsp">
+    <div class="pList clearfix tran"><a href="login.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/009.jpg" /><span class="abr"></span></dt>
-        <dd>入门与基础管理MySQL</dd>
+        <dd>MySQ入门与基础管理L</dd>
         <dd><span>￥520.00</span></dd>
       </dl>
-    </a><a href="proDetail/proDetail10.jsp">
+    </a><a href="login.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/010.png" /><span class="abr"></span></dt>
         <dd>一次性搞定数据库事务</dd>
         <dd><span>￥189.00</span></dd>
       </dl>
-    </a><a href="proDetail/proDetail11.jsp">
+    </a><a href="login.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/011.png" /><span class="abr"></span></dt>
         <dd>MySQL8.0跨平台编程实践</dd>
         <dd><span>￥148.00</span></dd>
       </dl>
-    </a><a href="proDetail/proDetail12.jsp">
+    </a><a href="login.jsp">
       <dl>
         <dt><span class="abl"></span><img src="img/sql/012.jpg" /><span class="abr"></span></dt>
         <dd>MySQL数据库原理</dd>
@@ -173,7 +173,7 @@
   </div>
 </div>
 <!--返回顶部-->
-<div class="gotop"><a href="cart.jsp">
+<div class="gotop"><a href="login.jsp">
   <dl>
     <dt><img src="img/gt1.png" /></dt>
     <dd>去购<br />物车</dd>
@@ -183,7 +183,7 @@
     <dt><img src="img/gt2.png" /></dt>
     <dd>联系<br />客服</dd>
   </dl>
-</a><a href="mygxin.jsp">
+</a><a href="login.jsp">
   <dl>
     <dt><img src="img/gt3.png" /></dt>
     <dd>个人<br />中心</dd>

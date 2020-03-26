@@ -1,6 +1,7 @@
 package com.learning.service;
 
 import com.learning.bean.Coursebean;
+import com.learning.bean.Paybean;
 import com.learning.dao.Basedao;
 
 import java.sql.Connection;
@@ -8,6 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.Callable;
 
 public class Coursedao {
@@ -101,7 +103,8 @@ public class Coursedao {
         int count = 0;
 
         try{
-            String sql = "insert into pay values(?, ?, ?)";
+            //String sql = "insert into pay values(?, ?, ?)";
+            String sql = "insert into pay1(userName,courseName,location) values(?, ?, ?)";
             conn = Basedao.getConnection();
             preparedStatement = conn.prepareStatement(sql);
             preparedStatement.setString(1, userName);
@@ -116,6 +119,34 @@ public class Coursedao {
         return count;
     }
 
+    //通过用户名，查询该用户已购买的课程
+    public static List<Paybean> selectPay(String username){
+        Connection conn = null;
+        PreparedStatement preparedStatement = null;
+        ResultSet resultSet = null;
+        List<Paybean> list = new ArrayList<Paybean>();
+        try {
+            conn = Basedao.getConnection();
+            //String sql = "select * from pay where userName like ?";
+            String sql = "select * from pay1 where userName like ?";
+            preparedStatement = conn.prepareStatement(sql);
+            preparedStatement.setString(1,username);
+            resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()){
+                Paybean paybean = new Paybean(
+                        resultSet.getString(2),
+                        resultSet.getString(3),
+                        resultSet.getString(4)
+                );
+                list.add(paybean);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            Basedao.closeAll(resultSet, preparedStatement, conn);
+        }
+        return list;
+    }
     public static int[] totalPage(int counts, String keyword) throws SQLException {
         int arr[] = {0,1};       //arr[0]保存的是总的记录，arr[1]保存的是总的页数
 
